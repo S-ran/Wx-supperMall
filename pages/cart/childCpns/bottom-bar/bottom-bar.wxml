@@ -1,0 +1,10 @@
+<view class='bottom-bar'>
+  <view class='check-box'>
+    <w-check-icon icon="icon" isChecked="{{selected}}" bindtap="onclick"/>
+    <view>全选</view>
+  </view>
+  <view class='counter'>
+    总计: ¥{{price}}
+  </view>
+  <view class='payment' bindtap="ontap">去计算({{counter}})</view>
+</view>

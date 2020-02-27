@@ -1,0 +1,17 @@
+<scroll-view class='content' scroll-top="{{back}}" scroll-y >
+  <!-- <view style="width:34px;height:34px;background:red;  position: fixed;top:10px;right: 10px;z-index:9" bindtap="ww"></view> -->
+  <!-- 1.子类别展示 -->
+  <view class='subcategory'>
+    <block wx:for="{{subCategories}}" wx:key="index">
+      <!-- 小图标标题 -->
+      <view class='item'>
+        <image src="{{item.image}}" mode='widthFix'/>
+        <view>{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+  <!-- 大图片详情 -->
+  <view class='detail'>
+    <w-goods goodslist="{{categoryDetail}}"/>
+  </view>
+</scroll-view>

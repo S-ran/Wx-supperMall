@@ -1,0 +1,6 @@
+<view class="category">
+  <w-title categories="{{categories}}" bind:titleTap="titleTap"/>
+  <w-detail class="backTo"
+            subCategories="{{categoryData[currentIndex].subCategories}}"
+            categoryDetail="{{categoryData[currentIndex].categoryDetail}}"/>
+</view>

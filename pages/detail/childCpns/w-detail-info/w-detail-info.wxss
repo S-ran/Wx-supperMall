@@ -1,0 +1,53 @@
+.detail-info {
+  border-bottom: 15rpx solid #f2f2f2;
+}
+/* 头部相关 */
+.header {
+  position: relative;
+  padding: 10rpx 30rpx;
+  font-size: 32rpx;
+}
+.header .line {
+  width: 580rpx;
+  height: 1px;
+  background: #666;
+  margin: 30rpx 0;
+  position: relative;
+}
+.header .end {
+  float: right;
+}
+.header .line, .header .end{
+ background: #c800f0
+}
+.header .start::before, .header .end::after {
+  content: "";
+  position: absolute;
+  width: 10rpx;
+  height: 10rpx;
+  background: #c800f0;
+}
+.header .start::before {
+  bottom: -7rpx;
+}
+.header .end::after {
+  bottom: 0;
+  right: 0;
+}
+/* 展示相关 */
+.content .title {
+  margin: 50rpx 0 30rpx 30rpx;
+  font-size: 32rpx;
+}
+.content image {
+  width: 100%;
+}
+.title text{
+  font-size: 50rpx;
+  font-style: italic;
+  text-shadow:0 0 4px white,
+              0 -5px 4px #ff3,
+              2px -10px 6px #fd3,
+              -2px -15px 11px #f80,
+              2px -25px 18px #f20;
+}

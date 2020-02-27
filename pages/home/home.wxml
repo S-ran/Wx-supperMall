@@ -1,0 +1,24 @@
+<view class="home">
+  <view hidden="{{!showTap}}">
+        <w-tab-control class="tab-show" titles="{{titles}}"  bind:tabtap="tabtap"/>
+  </view>
+  <scroll-view class="content"
+               scroll-y
+               scroll-with-animation="true"
+               scroll-top="{{backTop}}"
+               bindscroll="scrollPosition"
+               bindscrolltolower="bindscrolltolower">
+      <!-- 轮播图 -->
+      <w-swiper images="{{banners}}"/>
+      <!-- 推荐数据展示 -->
+      <w-recommend  recommends="{{recommends}}" bind:imageload="homeimgLoad"/>
+      <!-- 展示本周流行 -->
+      <w-feature />
+      <!-- 分类选择 -->
+      <w-tab-control titles="{{titles}}" class="tab" bind:tabtap="tabtap"/>
+      <!-- 分类数据展示 -->
+      <w-goods goodslist="{{goods[currentType].list}}" />
+      <!-- 回顶图标 -->
+      <w-back-top bindtap="backTap" wx:if="{{showBackTop}}"/>
+  </scroll-view>
+</view>

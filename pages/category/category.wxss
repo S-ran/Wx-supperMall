@@ -1,0 +1,12 @@
+.category {
+  height: 100vh;
+  display: flex;
+}
+
+.category w-title {
+  width: 30%;
+}
+
+.category w-detail {
+  width: 70%;
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "w-header": "./w-header/w-header",
+    "w-info": "./w-info/w-info",
+    "w-list-view": "./w-list-view/w-list-view"
+  },
+  "navigationBarTitleText": "我的"
+}

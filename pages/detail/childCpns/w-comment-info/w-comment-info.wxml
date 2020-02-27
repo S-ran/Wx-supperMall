@@ -1,0 +1,28 @@
+<view class='comment-info'>
+  <!-- tab -->
+  <view class='header'>
+    <view>用户评价</view>
+    <view>更多 =></view>
+  </view>
+  <!-- 用户头像及用户名 -->
+  <view class='user'>
+    <image src="{{commentInfo.user.avatar}}"/>
+    <text>{{commentInfo.user.uname}}</text>
+  </view>
+  <!-- 评论内容 -->
+  <view class='comment'>
+    {{commentInfo.content}}
+  </view>
+  <!-- 单号及宝贝款式 -->
+  <view class='other-info'>
+    <view class='time'>{{commentInfo.created}}</view>
+    <view class='style'>{{commentInfo.style}}</view>
+  </view>
+  <!-- 用户秀 -->
+  <view class='picture'>
+    <block wx:for="{{commentInfo.images}}" 
+           wx:key="index">
+      <image src="{{item}}" mode="widthFix"/>
+    </block>
+  </view>
+</view>

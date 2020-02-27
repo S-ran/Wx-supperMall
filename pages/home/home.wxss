@@ -1,0 +1,14 @@
+.home {
+  height: 100vh;
+}
+.content{
+  height: 100%;
+}
+.tab-show{
+  background: #fff;
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  z-index: 1;
+}

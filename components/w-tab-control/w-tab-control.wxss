@@ -1,0 +1,24 @@
+.tab{
+  height: 90rpx;
+  display: flex;
+}
+.tab-item{
+  height: 100%;
+  flex: 1;
+  text-align: center;
+  margin: auto auto;
+  line-height: 80rpx;
+}
+.active{
+  font-size: 50rpx;
+  text-shadow:0 0 4px white,
+              0 -5px 4px #ff3,
+              2px -10px 6px #fd3,
+              -2px -15px 11px #f80,
+              2px -25px 18px #f20;
+}
+.active text{
+  margin-top: 30rpx;
+  border-bottom: 10rpx solid #c800f0;
+  border-radius: 10rpx;
+}

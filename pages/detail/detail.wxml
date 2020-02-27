@@ -1,0 +1,10 @@
+<scroll-view class='scroll' scroll-y>
+  <w-swiper class='d-swiper' images="{{topImages}}"/>
+  <w-base-info baseInfo="{{baseInfo}}" />
+  <w-shop-info shopInfo="{{shopInfo}}"/>
+  <w-detail-info detailInfo="{{detailInfo}}"/>
+  <w-param-info paramInfo="{{paramInfo}}"/>
+  <w-comment-info commentInfo="{{commentInfo}}"/>
+  <w-recommend-info recommends="{{recommends}}"/>
+</scroll-view>
+<w-bottom-bar bind:onTapAdd="onTapAdd"/>
