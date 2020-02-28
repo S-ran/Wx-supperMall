@@ -2,7 +2,7 @@ export default function(config){
  return new Promise((resolve,reject)=>{
    wx.request({
      //公共地址以及超时时间
-     url: 'http://106.54.54.237:8000/api/hy'+config.url,
+     url: 'http://106.54.54.237:8000/api/wh'+config.url,
      timeout: 5000,
      //请求方法
      methods: config.methods || 'get',
